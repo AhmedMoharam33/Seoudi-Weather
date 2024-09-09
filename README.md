@@ -6,14 +6,6 @@ Seoudi Weather is a user-friendly weather application that provides real-time we
 The app is designed to offer a seamless experience for users to view current weather conditions and hourly forecasts. 
 It features a dynamic interface with options to switch between Celsius and Fahrenheit, 
 and allows users to select different locations to get detailed weather information.
-
-
-## Screenshots
-
-### Main Screen
-![Locations Screen](Seoudi Weather/Resources/Assets.xcassets/1.imageset)
-![Main Screen with Fahrenheit state](assets/2.png)
-![Main Screen with Celsius state](assets/3.png)
  
 ## Features
 
