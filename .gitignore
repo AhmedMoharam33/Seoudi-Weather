@@ -1,0 +1,40 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserdata
+*.xcuserstate
+
+# Build
+build/
+*.app
+*.ipa
+*.dSYM
+
+# Swift Package Manager
+/.build/
+Packages.swift
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.swp
+*.swo
+
+# User-specific settings
+*.DS_Store
+*.idea/

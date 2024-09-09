@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HourlyCollectionCell" customModule="Seoudi_Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cj1-tb-dmM">
+                        <rect key="frame" x="10" y="10" width="193" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-L9-UhI">
+                                <rect key="frame" x="76" y="0.0" width="41.333333333333343" height="19.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eIE-pd-T0Z">
+                                <rect key="frame" x="81.666666666666671" y="27.666666666666664" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="SU1-Qc-cn3"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZhO-RQ-5Pp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-cO-jDR">
+                                <rect key="frame" x="76" y="65.666666666666671" width="41.333333333333343" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wP8-L9-UhI" firstAttribute="height" secondItem="GoD-cO-jDR" secondAttribute="height" id="5wY-C1-jc0"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cj1-tb-dmM" secondAttribute="bottom" constant="10" id="2QR-fp-ri1"/>
+                <constraint firstItem="cj1-tb-dmM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="DvB-Ca-SF5"/>
+                <constraint firstItem="cj1-tb-dmM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dWy-A9-JNd"/>
+                <constraint firstAttribute="trailing" secondItem="cj1-tb-dmM" secondAttribute="trailing" constant="10" id="mJf-U6-ffR"/>
+            </constraints>
+            <size key="customSize" width="213" height="105"/>
+            <connections>
+                <outlet property="hourLabel" destination="wP8-L9-UhI" id="JCV-7X-rxv"/>
+                <outlet property="iconImageView" destination="eIE-pd-T0Z" id="EtO-xe-4E1"/>
+                <outlet property="stackView" destination="cj1-tb-dmM" id="2M9-io-pvZ"/>
+                <outlet property="temperatureLabel" destination="GoD-cO-jDR" id="Nvu-UX-fOn"/>
+            </connections>
+            <point key="canvasLocation" x="148.85496183206106" y="63.028169014084511"/>
+        </collectionViewCell>
+    </objects>
+</document>
