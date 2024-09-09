@@ -11,7 +11,7 @@ and allows users to select different locations to get detailed weather informati
 ## Screenshots
 
 ### Main Screen
-![Locations Screen](assets/1.png)
+![Locations Screen](Seoudi Weather/Resources/Assets.xcassets/1.imageset)
 ![Main Screen with Fahrenheit state](assets/2.png)
 ![Main Screen with Celsius state](assets/3.png)
  
